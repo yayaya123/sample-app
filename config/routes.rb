@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  get 'new' => 'users#new'
 
-  get 'pages/home'
-  get 'pages/contact'
-  get 'pages/about'
+  get 'home' => 'pages#home'
+  get 'contact' =>'pages#contact'
+  get 'about' => 'pages#about'
+  get 'help' => 'pages#help'
     
   root 'pages#home'
 
